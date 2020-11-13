@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/TasWolf3D.dir/src/game/consts.cpp.o CMakeFiles/TasWolf3D.dir/src/game/game.cpp.o CMakeFiles/TasWolf3D.dir/src/game/player.cpp.o CMakeFiles/TasWolf3D.dir/src/game/util.cpp.o CMakeFiles/TasWolf3D.dir/src/interface/draw.cpp.o CMakeFiles/TasWolf3D.dir/src/main.cpp.o  -o TasWolf3D  -lglut -lglfw3 -lGL -lGLU 

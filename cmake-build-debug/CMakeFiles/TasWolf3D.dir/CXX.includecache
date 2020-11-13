@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/consts.h
+functional
+-
+vector
+-
+cmath
+-
+
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/game.h
+vector
+-
+game_instances.h
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/game_instances.h
+player.h
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/player.h
+consts.h
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/consts.h
+
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/game_instances.h
+
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/player.h
+game_instances.h
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/game_instances.h
+consts.h
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/consts.h
+
+/home/yakun/CLionProjects/TAS-wolf3d/src/interface/draw.h
+../game/game.h
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/game.h
+
+/home/yakun/CLionProjects/TAS-wolf3d/src/main.cpp
+iostream
+-
+game/game.h
+/home/yakun/CLionProjects/TAS-wolf3d/src/game/game.h
+interface/draw.h
+/home/yakun/CLionProjects/TAS-wolf3d/src/interface/draw.h
+

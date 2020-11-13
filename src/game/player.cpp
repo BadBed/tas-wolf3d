@@ -1,33 +1,27 @@
 #include "player.h"
 #include "game.h"
 #include "consts.h"
-#include "actor.h"
 
 #include <cassert>
 
 void Player::do_actor(Game *game, const ControlInput &input) {
-    update_face(game);
-    if (state == PS_BASIC) {
-        change_weapon(game, input);
-        if (input.is_use) {
-            cmd_use(game);
-        }
-        else if (input.is_attack) {
-            cmd_fire(game);
-        }
-    }
+//    update_face(game);
+//    if (state == PS_BASIC) {
+//        change_weapon(game, input);
+//        if (input.is_use) {
+//            cmd_use(game);
+//        }
+//        else if (input.is_attack) {
+//            cmd_fire(game);
+//        }
+//    }
     move(game, input);
-    if (state == PS_ATTACK) {
-        do_attack(game, input);
-    }
+//    if (state == PS_ATTACK) {
+//        do_attack(game, input);
+//    }
 }
 
 void Player::update_face(Game *game) {
-    face_count++;
-    if (face_count > game->gen_rnd()) {
-        game->gen_rnd();
-        face_count = 0;
-    }
 }
 
 void Player::change_weapon(Game *game, const ControlInput &input) {
@@ -104,16 +98,6 @@ bool Player::try_move(Game *game, int dx, int dy) {
     if (tyh < game->map_size - 1) tyh++;
 
     // Check if there are actor
-    for (int tx = txl; tx <= txh; tx++) {
-        for (int ty = tyl; ty <= tyh; ty++) {
-            auto act = game->actor_at[tx][ty];
-            if (act and act->is_shootable()) {
-                if (abs(new_x - act->x) <= MIN_ACTOR_DIST and abs(new_y - act->y) <= MIN_ACTOR_DIST) {
-                    return false;
-                }
-            }
-        }
-    }
 
     this->x = new_x;
     this->y = new_y;

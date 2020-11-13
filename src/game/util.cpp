@@ -4,4 +4,3 @@
 int coord2tile(int x) {
     return x >> TILE_SHIFT;
 }
-

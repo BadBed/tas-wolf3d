@@ -1,0 +1,3 @@
+/home/yakun/CLionProjects/TAS-wolf3d/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yakun/CLionProjects/TAS-wolf3d/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yakun/CLionProjects/TAS-wolf3d/cmake-build-debug/CMakeFiles/TasWolf3D.dir

@@ -1,8 +1,7 @@
 #include <iostream>
 #include "game/game.h"
+#include "interface/draw.h"
 
 int main() {
-    Game a;
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    run_window();
 }
